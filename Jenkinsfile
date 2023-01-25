@@ -11,7 +11,7 @@ pipeline{
 	steps{
 		dockerImage=docker.build("vprofile:$env.BUILD_ID")
 	     }
-											}
+											
 		}
 		}
 }
