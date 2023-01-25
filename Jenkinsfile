@@ -11,6 +11,7 @@ pipeline{
 			steps{
 				script{
 					dockerImage=docker.build("vprofileimage:${env.BUILD_ID}")
+					docker.push('latest')
 				}
 			}
 		}
