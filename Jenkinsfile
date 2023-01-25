@@ -10,7 +10,7 @@ pipeline{
 		stage("Build Image from the Dockerfile"){
 			steps{
 				script{
-					dockerImage=docker.build("vprofileimage:${env.BUILD_ID}")
+					dockerImage=docker.build("lovarajukandala/vprofileimage:${env.BUILD_ID}")
 					dockerImage.push('latest')
 				}
 			}
