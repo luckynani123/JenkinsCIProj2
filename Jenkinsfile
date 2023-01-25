@@ -9,7 +9,9 @@ pipeline{
 	stages{
 	stage('Build the code using Dockerfile'){
 	steps{
+		scripts{
 		dockerImage=docker.build("vprofile:$env.BUILD_ID")
+		}
 	     }
 											
 		}
