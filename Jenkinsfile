@@ -6,7 +6,7 @@ pipeline{
         appRegistry = "576512920959.dkr.ecr.us-east-1.amazonaws.com/vprofileapp"
         vprofileRegistry = "https://576512920959.dkr.ecr.us-east-1.amazonaws.com"
     }
-a
+
 	
 	tools{
 	maven "Maven3"
